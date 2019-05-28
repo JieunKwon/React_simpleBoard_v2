@@ -4,15 +4,22 @@ CRUD Board updated from https://github.com/JieunKwon/React_create_simpleBoard
 
 > What was updated?
 
-1) Separated three components from App and used by exporting those
+1) Separated three components from App and used by importing and exporting those
 
 - App (Default)
 
+    import BoardForm from './BoardForm';
+    
+    import BoardItem from './BoardItem';
+
 - BoardForm
 
-- BoardList
+    export default BoardForm;
 
 - BoardItem
+
+    export default BoardItem;
+
 
 2) Use shouldComponentUpdate Event when BoardForm updates
 
