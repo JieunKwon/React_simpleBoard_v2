@@ -2,7 +2,7 @@
 
 CRUD Board updated from https://github.com/JieunKwon/React_create_simpleBoard
 
-> 1. What was updated?
+> What was updated?
 
 1) Separated three components from App and used by exporting those
 
@@ -14,3 +14,12 @@ CRUD Board updated from https://github.com/JieunKwon/React_create_simpleBoard
 
 - BoardItem
 
+2) Use shouldComponentUpdate Event when BoardForm updates
+
+    shouldComponentUpdate(nextProps, nextState) {
+      
+      ...
+      
+      return true;
+   }
+ 
