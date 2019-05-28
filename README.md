@@ -31,3 +31,33 @@ CRUD Board updated from https://github.com/JieunKwon/React_create_simpleBoard
       
    }
  
+
+3) Make refrences using ref when data selected to edit
+
+
+            <form onSubmit={this.handleSubmit} class="BoardForm-form">
+             <table><tr><td>
+                  
+                  Name:  </td><td><input size="30" name="brdwriter" value={this.state.brdwriter} onChange={this.handleChange}/>
+                
+                </td></tr>
+                <tr><td>
+                    
+                  Title:  </td><td><input size="30"  name="brdtitle" value={this.state.brdtitle} onChange={this.handleChange}/>
+
+                <button type="submit">Save</button>
+                </td></tr>
+            </table>
+            </form>
+            
+            
+            => 
+            
+            <input placeholder="name" ref={node => this.brdwriter = node}/> 
+            
+            <input placeholder="title" ref={node => this.brdtitle = node}/> 
+            
+             
+
+ 
+
